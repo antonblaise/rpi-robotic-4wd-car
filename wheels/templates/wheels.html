@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Wheels Control</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f8f8f8;
+        }
+        #joystick-container {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            background-color: white;
+        }
+        #joystick-1 {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nipplejs/0.10.2/nipplejs.min.js"></script>
+</head>
+<body>
+    <div id="joystick-container">
+        <div id="joystick-1"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='joystick.js') }}"></script>
+</body>
+</html>
